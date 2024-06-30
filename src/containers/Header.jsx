@@ -1,5 +1,5 @@
 import React from 'react';
-import pfp from './assets/pfp-halftone.svg';
+import pfp from '../assets/pfp-halftone.svg';
 
 function Header() {
   return (

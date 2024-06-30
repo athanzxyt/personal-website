@@ -1,8 +1,8 @@
 import React from "react"
 
-import Header from "./Header"
-import Navbar from "./Navbar"
-import ContentPanel from "./ContentPanel"
+import Header from "./containers/Header"
+import Navbar from "./containers/Navbar"
+import ContentPanel from "./containers/ContentPanel"
 
 function App() {
   return (

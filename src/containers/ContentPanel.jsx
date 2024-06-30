@@ -3,9 +3,9 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Blogs from './pages/Blogs';
+import About from '../pages/About';
+import Projects from '../pages/Projects';
+import Blogs from '../pages/Blogs';
 
 function ContentPanel() {
   const location = useLocation();
