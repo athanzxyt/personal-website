@@ -1,0 +1,20 @@
+[
+    {
+        "company": "Vytal AI",
+        "title": "Founding Engineer",
+        "location": "Remote",
+        "current": true
+    },
+    {
+        "company": "Leidos",
+        "title": "Data Science Intern",
+        "location": "Alexandria, VA",
+        "current": true
+    },
+    {
+        "company": "George Mason University",
+        "title": "Deep Learning Intern",
+        "location": "Fairfax, VA",
+        "current": false
+    }
+]
