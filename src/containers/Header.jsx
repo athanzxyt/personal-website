@@ -8,7 +8,7 @@ function Header() {
         <img src={pfp} alt="A Picture of Me" className="rounded-md" />
       </div>
       <div id="info-panel" className="pl-4">
-        <h1 className='font-serif text-4xl'>Athan Zhang</h1>
+        <h1 className='font-serif text-5xl'>Athan Zhang</h1>
         <h2 className='pb-4 text-lg'>Engineer and Strategist</h2>
         <div id="social-media" className="flex items-center gap-2 flex-wrap">
           {/* Mail */}

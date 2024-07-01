@@ -20,8 +20,7 @@ const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
         <img 
           src={imgPath} 
           alt="company logo" 
-          style={{ filter: "grayscale(100%) contrast(80%)"}}
-          className='h-12'
+          className='h-12 filter grayscale contrast-80 hover:filter-none'
         /> 
       </div>
     </div>

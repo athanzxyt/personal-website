@@ -16,11 +16,11 @@ function Experience() {
           people.
         </p>
       </div>
-      <h1 className="text-xl font-semibold pb-3">Work History</h1>
+      <h1 className="text-2xl font-medium pb-3">Work History</h1>
       <WorkHistoryBlocks currentOnly={false} />
-      <h1 className="text-xl font-semibold py-3">Education</h1>
+      <h1 className="text-2xl font-medium py-3">Education</h1>
       <EducationBlocks />
-      <h1 className="text-xl font-bold py-3">Awards</h1>
+      <h1 className="text-2xl font-medium pt-8 py-3">Awards</h1>
       <AwardBlocks />
     </div>
   )

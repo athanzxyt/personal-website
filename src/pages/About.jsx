@@ -7,7 +7,7 @@ import WorkHistoryBlocks from '../components/WorkHistoryBlocks';
 
 function About() {
   return (
-    <div className='space-y-12'>
+    <div className='space-y-14'>
       <div className='text-zinc-500'>
         <p>
           I'm currently an undergraduate at Princeton in an accelerated
@@ -26,12 +26,12 @@ function About() {
       </div>
 
       <div>
-        <h1 className="font-serif text-xl pb-3">Featured Projects</h1>
+        <h1 className="font-serif text-2xl pb-4">Featured Projects</h1>
         <ProjectBoxes featuredOnly={true} />
       </div>
 
       <div>
-        <h1 className="font-serif text-xl pb-3">Currently Working At</h1>
+        <h1 className="font-serif text-2xl pb-4">Currently Working At</h1>
         <WorkHistoryBlocks currentOnly={true} />
       </div>
     </div>
