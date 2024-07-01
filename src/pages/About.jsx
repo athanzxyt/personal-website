@@ -9,12 +9,12 @@ import WorkHistoryBlocks from '../components/WorkHistoryBlocks';
 function About() {
   return (
     <motion.div 
-      className='space-y-14'
+      className='space-y-4 md:space-y-14'
       initial={{ opacity: 0, transition: { duration: 0.25 } }}
       animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
     >
-      <div className='text-zinc-500'>
+      <div className='text-sm md:text-base text-zinc-500'>
         <p>
           I'm currently an undergraduate at Princeton in an accelerated
           track studying Computer Science. Currently I'm helping build
@@ -32,12 +32,12 @@ function About() {
       </div>
 
       <div>
-        <h1 className="font-serif text-2xl pb-4">Featured Projects</h1>
+        <h1 className="font-serif text-lg md:text-2xl pb-4">Featured Projects</h1>
         <ProjectBoxes featuredOnly={true} />
       </div>
 
       <div>
-        <h1 className="font-serif text-2xl pb-4">Currently Working At</h1>
+        <h1 className="font-serif text-lg md:text-2xl pb-4">Currently Working At</h1>
         <WorkHistoryBlocks currentOnly={true} />
       </div>
     </motion.div>

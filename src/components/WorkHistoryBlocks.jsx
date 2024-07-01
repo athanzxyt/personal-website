@@ -6,10 +6,10 @@ const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
   return (
     <div className='flex justify-between mb-4 h-24'>
       <div>
-        <div className='flex items-center'>
-          <h2 className='text-xl'>{title}</h2>
+        <div className='flex flex-col-reverse md:flex-row items-start md:items-center'>
+          <h2 className='text-base md:text-xl'>{title}</h2>
           {current ? (
-            <div className='bg-secondary text-white text-xs rounded-full px-2 ml-2'>
+            <div className='bg-secondary text-white text-xs rounded-full px-2 md:ml-2'>
               Current
             </div>
           ) : null}
@@ -20,7 +20,7 @@ const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
         <img 
           src={imgPath} 
           alt="company logo" 
-          className='h-12 filter grayscale contrast-80 hover:filter-none'
+          className='h-8 mt-6 md:mt-0 md:h-12 filter grayscale contrast-80 hover:filter-none'
         /> 
       </div>
     </div>
