@@ -11,21 +11,21 @@ function Experience() {
   const [awards, setAwards] = useState([]);
 
   useEffect(() => {
-    fetch("src/assets/education.json")
+    fetch("/education.json")
     .then(response => response.json())
     .then(data => setEducation(data))
     .catch(error => console.error('Error fetching education data:', error));
   }, []);
 
   useEffect(() => {
-    fetch("src/assets/workHistory.json")
+    fetch("/workHistory.json")
     .then(response => response.json())
     .then(data => setWorkHistory(data))
     .catch(error => console.error('Error fetching work history data:', error));
   }, []);
 
   useEffect(() => {
-    fetch("src/assets/awards.json")
+    fetch("/awards.json")
     .then(response => response.json())
     .then(data => setAwards(data))
     .catch(error => console.error('Error fetching awards data:', error));
