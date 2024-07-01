@@ -3,6 +3,7 @@ import React from "react"
 import Header from "./containers/Header"
 import Navbar from "./containers/Navbar"
 import ContentPanel from "./containers/ContentPanel"
+import Footer from "./containers/Footer"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <section className="w-full border-b-2"/>
         <Navbar />
         <ContentPanel />
+        <Footer />
       </div>
     </div>
   )
