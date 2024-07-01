@@ -2,15 +2,17 @@
 
 import React, { useState, useEffect } from 'react';
 
-const ProjectBox = ({ icon, title, description }) => (
-  <div className="flex flex-col items-start">
-    <div className="flex bg-gray-800 items-center justify-center h-8 w-8 rounded-md mb-2">
-      <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#FFFFFF">
-        <path d={icon}/>
-      </svg>
-    </div>
-    <h3 className="text-lg font-medium mb-1">{title}</h3>
-    <p className="text-gray-500 text-sm">{description}</p>
+const ProjectBox = ({ icon, title, description, link }) => (
+  <div className="flex flex-col items-start group transition-transform duration-300 transform hover:-translate-y-2">
+    <a href={link}>
+      <div className="flex bg-gray-800 group-hover:bg-secondary items-center justify-center h-8 w-8 rounded-md mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#FFFFFF">
+          <path d={icon}/>
+        </svg>
+      </div>
+      <h3 className="text-lg font-medium mb-1">{title}</h3>
+      <p className="text-gray-500 text-sm">{description}</p>
+    </a>
   </div>
 );
 
@@ -33,6 +35,7 @@ const ProjectBoxes = ({featuredOnly }) => {
             icon={project.icon}
             title={project.title}
             description={project.description}
+            link={project.link}
           />
         ) : null
       ))}
