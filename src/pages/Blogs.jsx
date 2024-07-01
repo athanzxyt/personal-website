@@ -10,7 +10,7 @@ function Blogs() {
       animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
     >
-      <div className="text-zinc-500 pb-8">
+      <div className="text-sm md:text-base text-zinc-500 pb-8">
         <p>
           This section contains literally anything. From favorite quotes
           to random thoughts, it's a place where I can share my ideas and
