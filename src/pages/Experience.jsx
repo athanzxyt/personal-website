@@ -1,13 +1,19 @@
 // Experience.jsx
 
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import EducationBlocks from '../components/EducationBlocks';
 import WorkHistoryBlocks from '../components/WorkHistoryBlocks';
 import AwardBlocks from '../components/AwardBlocks';
 
 function Experience() {
   return (
-    <div>
+    <motion.div 
+      initial={{ opacity: 0, transition: { duration: 0.25 } }}
+      animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
+      exit={{ opacity: 0, transition: { duration: 0.25 } }}
+    >
       <div className="text-zinc-500 pb-8">
         <p>
           The technical background and experiences that have been 
@@ -22,7 +28,7 @@ function Experience() {
       <EducationBlocks />
       <h1 className="text-2xl font-medium pt-8 py-3">Awards</h1>
       <AwardBlocks />
-    </div>
+    </motion.div>
   )
 }
 

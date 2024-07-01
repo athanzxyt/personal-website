@@ -1,11 +1,17 @@
 // Projects.jsx
 
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import ProjectBoxes from '../components/ProjectBoxes';
 
 function Projects() {
   return (
-    <div>
+    <motion.div 
+      initial={{ opacity: 0, transition: { duration: 0.25 } }}
+      animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
+      exit={{ opacity: 0, transition: { duration: 0.25 } }}
+    >
       <div className="text-zinc-500 pb-8">
         <p>
           The following are some of the projects I've worked on in the past. 
@@ -14,7 +20,7 @@ function Projects() {
         </p>
       </div>
       <ProjectBoxes featuredOnly={false}/>
-    </div>
+    </motion.div>
   )
 }
 
