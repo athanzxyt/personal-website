@@ -6,7 +6,7 @@ import ContentPanel from "./containers/ContentPanel"
 
 function App() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-tertiary">
       <div className="w-full max-w-screen-lg space-y-8 p-4">
         <Header />
         <section className="w-full border-b-2"/>

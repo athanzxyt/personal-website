@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,11 +7,11 @@
 /* Nav Items */
 
 .nav-item {
-  @apply px-3 py-0.5 rounded-lg;
+  @apply px-3 py-0.5 rounded-lg border-2;
 }
 
 .nav-item:hover:not(.active) {
-  @apply bg-slate-300;
+  @apply bg-secondary text-white;
 }
 
 .nav-item.active {

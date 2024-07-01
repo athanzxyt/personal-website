@@ -33,7 +33,7 @@ function Experience() {
 
   return (
     <div>
-      <h1 className="text-xl font-bold pb-3">Work History</h1>
+      <h1 className="text-xl font-semibold pb-3">Work History</h1>
       {workHistory.map(workHistoryItem => (
         <WorkHistoryBlock 
           company={workHistoryItem.company}
@@ -44,7 +44,7 @@ function Experience() {
         />
       ))}
 
-      <h1 className="text-xl font-bold py-3">Education</h1>
+      <h1 className="text-xl font-semibold py-3">Education</h1>
       {education.map(educationItem => (
         <ExperienceBlock 
           school={educationItem.school}

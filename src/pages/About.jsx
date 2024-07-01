@@ -16,7 +16,7 @@ function About() {
 
   return (
     <div className='space-y-12'>
-      <div>
+      <div className='text-zinc-500'>
         <p>
           I'm currently an undergraduate at Princeton in an accelerated
           track studying Computer Science. Currently I'm helping build
@@ -33,7 +33,7 @@ function About() {
         </p>
       </div>
       <div>
-        <h1 className="font-bold">Currently Working At</h1>
+        <h1 className="font-serif text-xl pb-3">Currently Working At</h1>
         {workHistory.filter(workHistoryItem => workHistoryItem.current).map(filteredWorkHistoryItem => (
           <WorkHistoryBlock
             company={filteredWorkHistoryItem.company}
