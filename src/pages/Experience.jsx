@@ -2,51 +2,35 @@
 
 import React, { useState, useEffect } from 'react';
 import ExperienceBlock from '../components/ExperienceBlock';
-import WorkHistoryBlock from '../components/WorkHistoryBlock';
+import WorkHistoryBlocks from '../components/WorkHistoryBlocks';
 import AwardBlock from '../components/AwardBlock';
 
 function Experience() {
   const [education, setEducation] = useState([]);
-  const [workHistory, setWorkHistory] = useState([]);
   const [awards, setAwards] = useState([]);
 
   useEffect(() => {
     fetch("/education.json")
-    .then(response => response.json())
-    .then(data => setEducation(data))
-    .catch(error => console.error('Error fetching education data:', error));
-  }, []);
-
-  useEffect(() => {
-    fetch("/workHistory.json")
-    .then(response => response.json())
-    .then(data => setWorkHistory(data))
-    .catch(error => console.error('Error fetching work history data:', error));
+      .then(response => response.json())
+      .then(data => setEducation(data))
+      .catch(error => console.error('Error fetching education data:', error));
   }, []);
 
   useEffect(() => {
     fetch("/awards.json")
-    .then(response => response.json())
-    .then(data => setAwards(data))
-    .catch(error => console.error('Error fetching awards data:', error));
+      .then(response => response.json())
+      .then(data => setAwards(data))
+      .catch(error => console.error('Error fetching awards data:', error));
   }, []);
 
   return (
     <div>
       <h1 className="text-xl font-semibold pb-3">Work History</h1>
-      {workHistory.map(workHistoryItem => (
-        <WorkHistoryBlock 
-          company={workHistoryItem.company}
-          title={workHistoryItem.title}
-          location={workHistoryItem.location}
-          current={workHistoryItem.current}
-          imgPath={workHistoryItem.imgPath}
-        />
-      ))}
+      <WorkHistoryBlocks currentOnly={false} />
 
       <h1 className="text-xl font-semibold py-3">Education</h1>
       {education.map(educationItem => (
-        <ExperienceBlock 
+        <ExperienceBlock
           school={educationItem.school}
           years={educationItem.years}
           degree={educationItem.degree}
@@ -56,7 +40,7 @@ function Experience() {
 
       <h1 className="text-xl font-bold py-3">Awards</h1>
       {awards.map(award => (
-        <AwardBlock 
+        <AwardBlock
           award={award.award}
           organization={award.organization}
           year={award.year}

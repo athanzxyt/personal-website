@@ -1,11 +1,12 @@
 // Projects.jsx
 
 import React from 'react';
+import ProjectBoxes from '../components/ProjectBoxes';
 
 function Projects() {
   return (
     <div>
-      <h1 className="text-3xl font-bold">Projects</h1>
+      <ProjectBoxes featuredOnly={false}/>
     </div>
   )
 }
