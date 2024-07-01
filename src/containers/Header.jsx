@@ -1,18 +1,17 @@
 // Header.jsx
 
 import React from 'react';
-import pfp from '../assets/pfp-halftone.svg';
 
 function Header() {
   return (
     <header className='flex mt-4 h-24 md:h-36'>
       <div id="picture" className="flex h-24 w-24 md:h-36 md:w-36">
-        <img src={pfp} alt="A Picture of Me" className="rounded-md" />
+        <img src="src/assets/pfp-bw.jpg" alt="A Picture of Me" className="rounded-md" />
       </div>
 
       <div id="info-panel" className="pl-4">
         <h1 className='font-serif text-3xl md:text-5xl'>Athan Zhang</h1>
-        <h2 className='pb-4 text-sm md:text-lg'>Engineer and Strategist</h2>
+        <h2 className='pb-4 text-sm md:text-lg'>Engineer and Data Fanatic</h2>
 
         <div id="social-media" className="flex items-center gap-2">
           {/* Mail */}
