@@ -5,8 +5,8 @@ import pfp from '../assets/pfp-halftone.svg';
 
 function Header() {
   return (
-    <header className='flex mt-4 h-24 md:h-32 flex-row'>
-      <div id="picture" className="flex h-full">
+    <header className='flex mt-4 h-24 md:h-36'>
+      <div id="picture" className="flex h-24 w-24 md:h-36 md:w-36">
         <img src={pfp} alt="A Picture of Me" className="rounded-md" />
       </div>
 
