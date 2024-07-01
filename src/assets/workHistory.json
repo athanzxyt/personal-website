@@ -3,18 +3,21 @@
         "company": "Vytal AI",
         "title": "Founding Engineer",
         "location": "Remote",
-        "current": true
+        "current": true,
+        "imgPath": "src/assets/vytalLogo.png"
     },
     {
         "company": "Leidos",
         "title": "Data Science Intern",
         "location": "Alexandria, VA",
-        "current": true
+        "current": true,
+        "imgPath": "src/assets/leidosLogo.png"
     },
     {
         "company": "George Mason University",
         "title": "Deep Learning Intern",
         "location": "Fairfax, VA",
-        "current": false
+        "current": false,
+        "imgPath": "src/assets/gmuLogo.png"
     }
 ]

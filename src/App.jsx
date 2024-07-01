@@ -9,6 +9,7 @@ function App() {
     <div className="flex justify-center">
       <div className="w-full max-w-screen-lg space-y-8 p-4">
         <Header />
+        <section className="w-full border-b-2"/>
         <Navbar />
         <ContentPanel />
       </div>

@@ -40,6 +40,7 @@ function Experience() {
           title={workHistoryItem.title}
           location={workHistoryItem.location}
           current={workHistoryItem.current}
+          imgPath={workHistoryItem.imgPath}
         />
       ))}
 
