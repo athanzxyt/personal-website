@@ -39,7 +39,7 @@ const WorkHistoryBlocks = ({ currentOnly }) => {
   }, []);
 
   return (
-    <div>
+    <>
       {workHistory.map(workHistoryItem => (
         (workHistoryItem.current || !currentOnly) ? (
           <WorkHistoryBlock 
@@ -51,7 +51,7 @@ const WorkHistoryBlocks = ({ currentOnly }) => {
         />
         ) : null
       ))}
-    </div>
+    </>
   );
 }
 
