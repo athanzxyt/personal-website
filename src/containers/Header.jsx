@@ -11,10 +11,10 @@ function Header() {
       </div>
 
       <div id="info-panel" className="pl-4">
-        <h1 className='font-serif text-2xl md:text-5xl'>Athan Zhang</h1>
+        <h1 className='font-serif text-3xl md:text-5xl'>Athan Zhang</h1>
         <h2 className='pb-4 text-sm md:text-lg'>Engineer and Strategist</h2>
 
-        <div id="social-media" className="flex items-center gap-1 md:gap-2">
+        <div id="social-media" className="flex items-center gap-2">
           {/* Mail */}
           <a href="mailto:athanzxyt@gmail.com" className="p-0.25 md:p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
