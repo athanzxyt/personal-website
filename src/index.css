@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 html {
-  @apply cursor-pointer;
   overflow-y: scroll; /* Always show vertical scrollbar */
 }
 

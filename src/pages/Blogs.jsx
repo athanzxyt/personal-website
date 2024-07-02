@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import BlogContent from '../components/BlogContent';
+
 function Blogs() {
   return (
     <motion.div 
@@ -17,9 +19,7 @@ function Blogs() {
           experiences with the world.
         </p>
       </div>
-      <h1 className='pt-4 font-serif'>
-          Coming Soon :3
-        </h1>
+      <BlogContent />
     </motion.div>
   )
 }

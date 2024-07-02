@@ -52,6 +52,6 @@ const WorkHistoryBlocks = ({ currentOnly }) => {
       ))}
     </>
   );
-}
+};
 
 export default WorkHistoryBlocks;

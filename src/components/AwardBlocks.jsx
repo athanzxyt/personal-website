@@ -9,7 +9,7 @@ const AwardBlock = ({ award, organization, year, details }) => {
       <p className="italic text-zinc-500 text-xs md:text-sm">{award}</p>
     </div>
   )
-}
+};
 
 const AwardBlocks = () => {
   const [awards, setAwards] = useState([]);
@@ -32,6 +32,6 @@ const AwardBlocks = () => {
       ))}
     </>
   )
-}
+};
 
 export default AwardBlocks;

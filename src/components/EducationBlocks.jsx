@@ -37,6 +37,6 @@ const EducationBlocks = () => {
       ))}
     </>
   )
-}
+};
 
 export default EducationBlocks;
