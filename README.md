@@ -1,10 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Athan's Personal Website
 
-Currently, two official plugins are available:
+![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![Framer Badge](https://img.shields.io/badge/Framer_Motion-05F?logo=framer&logoColor=fff&style=flat)
+![React Router Badge](https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=flat)
+![Autoprefixer Badge](https://img.shields.io/badge/Autoprefixer-DD3735?logo=autoprefixer&logoColor=fff&style=flat)
+![ESLint Badge](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=fff&style=flat)
+![Vite Badge](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository serves as the codebase for my personal website. It serves as my professional portfolio, showcasing my skills, projects, and professional background, but also includes aspects of my personal life. It's hosted and continuously deployed on Vercel.
 
-Most importantly I learned about creating depth through color.
+https://www.athanzhang.com/
+
+
+
+## Deployment
+
+To run this project in developer mode run
+
+```bash
+  npm run dev
+```
+## License
+
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
