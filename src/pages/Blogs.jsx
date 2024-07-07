@@ -3,8 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import BlogContent from '../components/BlogContent';
-
 function Blogs() {
   return (
     <motion.div 
@@ -19,7 +17,11 @@ function Blogs() {
           experiences with the world.
         </p>
       </div>
-      <BlogContent />
+      <div>
+        <p>
+          Coming Soon...
+        </p>
+      </div>
     </motion.div>
   )
 }
