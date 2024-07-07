@@ -55,7 +55,7 @@ const BlogContent = () => {
         <div>
           <button
             onClick={handleBackClick}
-            className="mb-4 p-2 bg-blue-500 text-white rounded"
+            className="mb-4 p-2 bg-secondary text-white rounded"
           >
             &larr; Back
           </button>
