@@ -8,7 +8,11 @@ function Header() {
     <>
       <header className='flex mt-4 h-24 md:h-36'>
         <div id="picture" className="flex h-24 w-24 md:h-36 md:w-36">
-          <Image src='/pfp-bw.jpg' alt="A Picture of Me" className="rounded-md" />
+          <Image src='/pfp-bw.jpg' 
+          alt="A Picture of Me" 
+          width={300}
+          height={300}
+          className="rounded-md" />
         </div>
 
         <div id="info-panel" className="pl-4">
