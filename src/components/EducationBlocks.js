@@ -18,6 +18,7 @@ export default function EducationBlocks({ education }) {
     <>
       {education.map(educationItem => (
         <EducationBlock
+          key={educationItem.school}
           school={educationItem.school}
           years={educationItem.years}
           degree={educationItem.degree}

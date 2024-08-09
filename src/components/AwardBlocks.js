@@ -14,6 +14,7 @@ export default function AwardBlocks({ awards }) {
     <>
       {awards.map(award => (
         <AwardBlock
+          key={award.award}
           award={award.award}
           organization={award.organization}
           year={award.year}

@@ -16,16 +16,12 @@ function getBlogContent(slug) {
 }
 
 export const generateStaticParams = async () => {
-  const blogs = getBlogMetadata();
+  const blogs = getBlogsMetadata();
   return blogs.map((blog) => ({
     params: {
       slug: blog.slug,
     },
   }));
-}
-
-export async function generateMetadata({ params, searchParams }) {
-  const id = params?.slug ? ''
 }
 
 export default function BlogPage({ slug }) {
@@ -35,7 +31,6 @@ export default function BlogPage({ slug }) {
     <main>
       <h1 className="text-2xl font-medium pb-3">{title}</h1>
       <p className="text-sm text-zinc-500 pb-3">{date}</p>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
     </main>
   );
 }

@@ -21,6 +21,7 @@ export default function ProjectBoxes({ projects, featuredOnly }) {
       {projects.map((project) => (
         (project.feature || !featuredOnly) ? (
           <ProjectBox
+            key={project.title}
             icon={project.icon}
             title={project.title}
             description={project.description}

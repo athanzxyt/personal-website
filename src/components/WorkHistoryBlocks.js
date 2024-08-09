@@ -1,5 +1,7 @@
 // src/components/WorkHistoryBlocks.js
 
+import Image from 'next/image';
+
 const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
   return (
     <div className='flex justify-between mb-4 h-24'>
@@ -15,7 +17,7 @@ const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
         <p className='text-md text-zinc-500'>{company}</p>
       </div>
       <div>
-        <img 
+        <Image 
           src={imgPath} 
           alt="company logo" 
           className='h-8 mt-6 md:mt-0 md:h-12 filter grayscale contrast-80 hover:filter-none'
@@ -31,6 +33,7 @@ export default function WorkHistoryBlocks({ workHistory, currentOnly }) {
       {workHistory.map(workHistoryItem => (
         (workHistoryItem.current || !currentOnly) ? (
           <WorkHistoryBlock 
+          key={workHistoryItem.company}
           company={workHistoryItem.company}
           title={workHistoryItem.title}
           location={workHistoryItem.location}
