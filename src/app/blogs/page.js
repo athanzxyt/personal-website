@@ -1,8 +1,17 @@
 // app/blogs/page.js
 
-import React from "react";
+import BlogCard from "@/components/BlogCard";
+import getBlogsMetadata from "@/utils/getBlogsMetadata";
+
+export async function generateMetadata({ params, searchParams }) {
+  return {
+    title: "Blogs | Athan Zhang"
+  }
+}
 
 export default function BlogsPage() {
+  const blogs = getBlogsMetadata();
+
   return (
     <main>
       <div className="text-sm md:text-base text-zinc-500 pb-8">
@@ -13,9 +22,12 @@ export default function BlogsPage() {
         </p>
       </div>
       <div>
-        <p>
-          Coming Soon...
-        </p>
+        {blogs.map((blog, blogIndex) => (
+          <BlogCard
+            key={blogIndex}
+            blog={blog}
+          />
+        ))}
       </div>
     </main>
   );

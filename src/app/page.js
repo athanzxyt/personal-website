@@ -1,15 +1,17 @@
 // src/app/page.js
 
 import React from "react";
-import ProjectBoxes from "@/components/ProjectBoxes";
+import ProjectCards from "@/components/ProjectCards";
 import WorkHistoryBlocks from "@/components/WorkHistoryBlocks";
+import getProjectsMetadata from "@/utils/getProjectsMetadata";
 import getExperienceMetadata from "@/utils/getExperienceMetadata";
 
 export default function Home() {
+  const projects = getProjectsMetadata();
   const workHistory = getExperienceMetadata({ experienceType: "workHistory" });
 
   return (
-    <main>
+    <main className="flex flex-col gap-y-8">
       <div className='text-sm md:text-base text-zinc-500'>
         <p>
           I'm currently an undergraduate at Princeton in an accelerated
@@ -28,12 +30,12 @@ export default function Home() {
       </div>
 
       <div>
-        <h1 className="font-serif text-lg md:text-2xl pb-4">Featured Projects</h1>
-        {/* <ProjectBoxes featuredOnly={true} /> */}
+        <h1 className="font-serif text-lg md:text-2xl pb-3">Featured Projects</h1>
+        <ProjectCards projects={projects} featuredOnly={true} />
       </div>
 
       <div>
-        <h1 className="font-serif text-lg md:text-2xl pb-4">Currently Working At</h1>
+        <h1 className="font-serif text-lg md:text-2xl pb-3">Currently Working At</h1>
         <WorkHistoryBlocks workHistory={workHistory} currentOnly={true} />
       </div>
     </main>

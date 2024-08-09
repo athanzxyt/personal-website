@@ -1,6 +1,6 @@
-// src/components/ProjectBoxes.js
+// src/components/ProjectCards.js
 
-const ProjectBox = ({ icon, title, description, link }) => (
+const ProjectCard = ({ icon, title, description, link }) => (
   <div className="flex flex-col items-start group transition-transform duration-300 transform hover:-translate-y-2">
     <a href={link}>
       <div className="flex bg-gray-800 group-hover:bg-secondary items-center justify-center h-6 w-6 p-0.5 md:h-8 md:w-8 rounded-md mb-2">
@@ -14,13 +14,13 @@ const ProjectBox = ({ icon, title, description, link }) => (
   </div>
 );
 
-export default function ProjectBoxes({ projects, featuredOnly }) {
+export default function ProjectCards({ projects, featuredOnly }) {
   return (
     <div className="container">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project) => (
         (project.feature || !featuredOnly) ? (
-          <ProjectBox
+          <ProjectCard
             key={project.title}
             icon={project.icon}
             title={project.title}

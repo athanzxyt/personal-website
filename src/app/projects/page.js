@@ -1,8 +1,11 @@
 // app/projects/page.js
 
-import ProjectBoxes from "@/components/ProjectBoxes";
+import ProjectCards from "@/components/ProjectCards";
+import getProjectsMetadata from "@/utils/getProjectsMetadata";
 
 export default function ProjectsPage() {
+  const projects = getProjectsMetadata();
+
   return (
     <main>
       <div className="text-sm md:text-base text-zinc-500 pb-8">
@@ -12,7 +15,7 @@ export default function ProjectsPage() {
           interesting projects, so feel free to reach out if you have any ideas!
         </p>
       </div>
-      {/* <ProjectBoxes projects={projects} featuredOnly={false}/> */}
+      <ProjectCards projects={projects} featuredOnly={false}/>
     </main>
   );
 }

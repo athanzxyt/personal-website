@@ -16,9 +16,7 @@ export default function RootLayout({ children }) {
         <div className="w-full max-w-screen-lg space-y-8 p-4">
           <Header />
           <Navbar />
-          <div>
-            {children}
-          </div>
+          {children}
         </div>
       </body>
     </html>
