@@ -3,6 +3,12 @@
 import ProjectCards from "@/components/ProjectCards";
 import getProjectsMetadata from "@/utils/getProjectsMetadata";
 
+export async function generateMetadata({ params, searchParams }) {
+  return {
+    title: "Projects | Athan Zhang"
+  }
+}
+
 export default function ProjectsPage() {
   const projects = getProjectsMetadata();
 

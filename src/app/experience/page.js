@@ -5,8 +5,13 @@ import EducationBlocks from "@/components/EducationBlocks";
 import AwardBlocks from "@/components/AwardBlocks";
 import getExperienceMetadata from "@/utils/getExperienceMetadata";
 
+export async function generateMetadata({ params, searchParams }) {
+  return {
+    title: "Experience | Athan Zhang"
+  }
+}
 
-export default async function ExperiencePage() {
+export default function ExperiencePage() {
   const workHistory = getExperienceMetadata({ experienceType: "workHistory" });
   const education = getExperienceMetadata({ experienceType: "education" });
   const awards = getExperienceMetadata({ experienceType: "awards" });  
