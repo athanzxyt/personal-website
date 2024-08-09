@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/layout.js"],"sourcesContent":["// app/layout.js\n\nimport \"./globals.css\";\nimport Header from \"@/components/Header\";\n\nexport const metadata = {\n  title: \"Athan Zhang\",\n  description: \"Athan's Personal Website\",\n};\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body className=\"flex justify-center\">\n        <div className=\"w-full max-w-screen-lg space-y-8 p-4\">\n          <Header />\n          {children}\n        </div>\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":"AAAA,gBAAgB;;;;;;;;;;;AAKT,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,qBACE,wPAAC;QAAK,MAAK;kBACT,cAAA,wPAAC;YAAK,WAAU;sBACd,cAAA,wPAAC;gBAAI,WAAU;;kCACb,wPAAC,4HAAA,CAAA,UAAM;;;;;oBACN;;;;;;;;;;;;;;;;;AAKX"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/components/Navbar.js/proxy.js"],"sourcesContent":["import { registerClientReference } from \"react-server-dom-turbopack/server.edge\";\nexport default registerClientReference(\n    function() { throw new Error(\"Attempted to call the default export of [project]/src/components/Navbar.js from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.\"); },\n    \"[project]/src/components/Navbar.js\",\n    \"default\",\n);\n"],"names":[],"mappings":";;;;;;uCACe,CAAA,GAAA,+PAAA,CAAA,0BAAuB,AAAD,EACjC;IAAa,MAAM,IAAI,MAAM;AAAwQ,GACrS,sCACA"}},
+    {"offset": {"line": 72, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 77, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 82, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 87, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/page.js"],"sourcesContent":["// app/page.js\n\nimport Navbar from \"@/components/Navbar\";\n\nexport default function Home() {\n  return (\n    <main>\n      <Navbar />\n      hello\n    </main>\n  );\n}\n"],"names":[],"mappings":"AAAA,cAAc;;;;;;;;;AAIC,SAAS;IACtB,qBACE,wPAAC;;0BACC,wPAAC,2HAAA,CAAA,UAAM;;;;;YAAG;;;;;;;AAIhB"}},
+    {"offset": {"line": 112, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 123, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/.next-internal/server/app/page/actions.js"],"sourcesContent":["__turbopack_export_value__({\n});"],"names":[],"mappings":"AAAA,2BAA2B,CAC3B"}},
+    {"offset": {"line": 124, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
