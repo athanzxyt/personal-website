@@ -22,13 +22,16 @@ export default function BlogsPage() {
         </p>
       </div>
       <div>
+        Coming soon...
+      </div>
+      {/* <div>
         {blogs.map((blog, blogIndex) => (
           <BlogCard
             key={blogIndex}
             blog={blog}
           />
         ))}
-      </div>
+      </div> */}
     </main>
   );
 }
