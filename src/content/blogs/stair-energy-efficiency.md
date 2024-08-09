@@ -1,5 +1,6 @@
 ---
 title: Are Stairs More Energy Efficient Than Elevators?
+subtitle: "Comparing Biomechanical Energy and Typical Fuels"
 date: 8/1/2024
 ---
 

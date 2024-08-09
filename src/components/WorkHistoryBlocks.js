@@ -1,6 +1,4 @@
-// WorkHistoryBlocks.jsx
-
-import React, { useState, useEffect } from 'react';
+// src/components/WorkHistoryBlocks.js
 
 const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
   return (
@@ -27,16 +25,7 @@ const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
   );
 };
 
-const WorkHistoryBlocks = ({ currentOnly }) => {
-  const [workHistory, setWorkHistory] = useState([]);
-
-  useEffect(() => {
-    fetch("/workHistory.json")
-    .then(response => response.json())
-    .then(data => setWorkHistory(data))
-    .catch(error => console.error('Error fetching work history data:', error));
-  }, []);
-
+export default function WorkHistoryBlocks({ workHistory, currentOnly }) {
   return (
     <>
       {workHistory.map(workHistoryItem => (
@@ -53,5 +42,3 @@ const WorkHistoryBlocks = ({ currentOnly }) => {
     </>
   );
 };
-
-export default WorkHistoryBlocks;

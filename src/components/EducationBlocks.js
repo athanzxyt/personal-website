@@ -1,6 +1,4 @@
-// EducationBlocks.jsx
-
-import React, { useState, useEffect } from 'react';
+// src/components/EducationBlocks.js
 
 const EducationBlock = ({ school, years, degree, major }) => {
   return (
@@ -15,16 +13,7 @@ const EducationBlock = ({ school, years, degree, major }) => {
   );
 };
 
-const EducationBlocks = () => {
-  const [education, setEducation] = useState([]);
-
-  useEffect(() => {
-    fetch("/education.json")
-      .then(response => response.json())
-      .then(data => setEducation(data))
-      .catch(error => console.error('Error fetching education data:', error));
-  }, []);
-
+export default function EducationBlocks({ education }) {
   return (
     <>
       {education.map(educationItem => (
@@ -38,5 +27,3 @@ const EducationBlocks = () => {
     </>
   )
 };
-
-export default EducationBlocks;

@@ -1,5 +1,6 @@
 ---
 title: Should AI Have Emotional Intelligence?
+subtitle: "Exploring the Implications of Emotionally Intelligent Machines"
 date: 7/5/2024
 ---
 

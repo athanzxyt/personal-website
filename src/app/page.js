@@ -1,19 +1,15 @@
-// About.jsx
+// src/app/page.js
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import ProjectBoxes from "@/components/ProjectBoxes";
+import WorkHistoryBlocks from "@/components/WorkHistoryBlocks";
+import getExperienceMetadata from "@/utils/getExperienceMetadata";
 
-import ProjectBoxes from '../components/ProjectBoxes';
-import WorkHistoryBlocks from '../components/WorkHistoryBlocks';
+export default function Home() {
+  const workHistory = getExperienceMetadata({ experienceType: "workHistory" });
 
-function About() {
   return (
-    <motion.div 
-      className='space-y-4 md:space-y-14'
-      initial={{ opacity: 0, transition: { duration: 0.25 } }}
-      animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
-      exit={{ opacity: 0, transition: { duration: 0.25 } }}
-    >
+    <main>
       <div className='text-sm md:text-base text-zinc-500'>
         <p>
           I'm currently an undergraduate at Princeton in an accelerated
@@ -33,15 +29,13 @@ function About() {
 
       <div>
         <h1 className="font-serif text-lg md:text-2xl pb-4">Featured Projects</h1>
-        <ProjectBoxes featuredOnly={true} />
+        {/* <ProjectBoxes featuredOnly={true} /> */}
       </div>
 
       <div>
         <h1 className="font-serif text-lg md:text-2xl pb-4">Currently Working At</h1>
-        <WorkHistoryBlocks currentOnly={true} />
+        <WorkHistoryBlocks workHistory={workHistory} currentOnly={true} />
       </div>
-    </motion.div>
-  )
+    </main>
+  );
 }
-
-export default About;

@@ -1,15 +1,10 @@
-// Blogs.jsx
+// app/blogs/page.js
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
 
-function Blogs() {
+export default function BlogsPage() {
   return (
-    <motion.div 
-      initial={{ opacity: 0, transition: { duration: 0.25 } }}
-      animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
-      exit={{ opacity: 0, transition: { duration: 0.25 } }}
-    >
+    <main>
       <div className="text-sm md:text-base text-zinc-500 pb-8">
         <p>
           This section contains literally anything. From favorite quotes
@@ -22,8 +17,6 @@ function Blogs() {
           Coming Soon...
         </p>
       </div>
-    </motion.div>
-  )
+    </main>
+  );
 }
-
-export default Blogs;

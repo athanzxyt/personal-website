@@ -1,6 +1,4 @@
-// AwardBlocks.jsx
-
-import React, { useState, useEffect } from 'react';
+// src/components/AwardBlocks.js
 
 const AwardBlock = ({ award, organization, year, details }) => {
   return (
@@ -11,16 +9,7 @@ const AwardBlock = ({ award, organization, year, details }) => {
   )
 };
 
-const AwardBlocks = () => {
-  const [awards, setAwards] = useState([]);
-
-  useEffect(() => {
-    fetch("/awards.json")
-      .then(response => response.json())
-      .then(data => setAwards(data))
-      .catch(error => console.error('Error fetching awards data:', error));
-  }, []);
-
+export default function AwardBlocks({ awards }) {
   return (
     <>
       {awards.map(award => (
@@ -33,5 +22,3 @@ const AwardBlocks = () => {
     </>
   )
 };
-
-export default AwardBlocks;

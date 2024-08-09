@@ -1,6 +1,4 @@
-// ProjectBoxes.jsx
-
-import React, { useState, useEffect } from 'react';
+// src/components/ProjectBoxes.js
 
 const ProjectBox = ({ icon, title, description, link }) => (
   <div className="flex flex-col items-start group transition-transform duration-300 transform hover:-translate-y-2">
@@ -16,20 +14,11 @@ const ProjectBox = ({ icon, title, description, link }) => (
   </div>
 );
 
-const ProjectBoxes = ({featuredOnly }) => {
-  const [projectsData, setProjectsData] = useState([]);
-
-  useEffect(() => {
-    fetch("/projects.json")
-    .then(response => response.json())
-    .then(data => setProjectsData(data))
-    .catch(error => console.error('Error fetching education data:', error));
-  }, []);
-
+export default function ProjectBoxes({ projects, featuredOnly }) {
   return (
     <div className="container">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {projectsData.map((project) => (
+      {projects.map((project) => (
         (project.feature || !featuredOnly) ? (
           <ProjectBox
             icon={project.icon}
@@ -43,5 +32,3 @@ const ProjectBoxes = ({featuredOnly }) => {
     </div>
   );
 };
-
-export default ProjectBoxes;
