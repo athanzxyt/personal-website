@@ -1,6 +1,7 @@
 // src/app/page.js
 
 import Image from "next/image";
+import Link from "next/link";
 
 import ProjectCards from "@/components/ProjectCards";
 import WorkHistoryBlocks from "@/components/WorkHistoryBlocks";
@@ -18,18 +19,23 @@ export default function Home() {
       <main className="flex flex-col">
         <div className='text-sm md:text-base text-zinc-500'>
           <p>
-            I'm currently an undergraduate at Princeton in an accelerated
+            {`I'm currently an undergraduate at Princeton in an accelerated
             track studying Computer Science. Currently I'm helping build
-            backend machine learning pipelines and advising with strategy at
-            <span> Vytal</span>
-            , a startup I helped start with a few friends back in high school.
+            backend machine learning pipelines and advising with strategy at `}
+            <Link href='https://vytal.ai' className="hover:text-purple-600 font-bold">Vytal</Link>
+            {`, a startup I helped start with a few friends back in high school.`}
             <br />
             <br />
-            On campus, I'm primarily involved with pursuing research in the
-            field of Human-Computer Interaction and working at
-            <span> Prospect Student Ventures</span> (Princeton's student-run VC),
-            as the Director of Founder Support. In my free time, I enjoying training for triathlons (swim, bike, run),
-            lifting, reading, and following the latest trends in tech.
+            {`On campus, I'm primarily involved with pursuing research in the
+            field of Human-Computer Interaction and working at `}
+            <Link href='pvc.vc' className="hover:text-orange-400 font-bold">Prospect Student Ventures</Link>
+            {` (Princeton's student-run VC), as the Director of Founder Support. 
+            In my free time, I enjoying training for triathlons (swim, bike, run),
+            lifting, `}
+            <Link href='https://www.goodreads.com/athanzhang' className="hover:text-red-600 font-bold">reading</Link>
+            {` (or at least trying to), and `}
+            <Link href='x.com' className="hover:text-blue-500 font-bold">following</Link>
+            {` the latest trends in tech.`}
           </p>
         </div>
 
