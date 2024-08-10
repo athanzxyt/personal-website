@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-2 grid-rows-4 md:grid-rows-3 md:grid-cols-3 gap-4 my-8">
-        <div className="relative h-40">
+        <div className="relative group h-40">
           <Image
             alt="My team and I at the 2023 Wharton Investment Competition finals, where we won 1st place"
             src={'/gallery/investmentfinals.jpg'}
@@ -49,8 +49,11 @@ export default function Home() {
             priority
             className="rounded-lg object-cover"
           />
+          <div className="absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-white w-3/4 text-xs">My team and I at the 2023 Wharton Investment Competition finals, where we won 1st place</span>
+          </div>
         </div>
-        <div className="relative md:row-span-2 row-span-1">
+        <div className="relative group md:row-span-2 row-span-1">
           <Image
             alt="Me and a friend at our high school graduation"
             src={'/gallery/hsgraduation.jpg'}
@@ -59,8 +62,11 @@ export default function Home() {
             priority
             className="rounded-lg object-cover object-top sm:object-center"
           />
+          <div className="absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-white w-3/4 text-xs">Me and a friend at our high school graduation</span>
+          </div>
         </div>
-        <div className="relative">
+        <div className="relative group">
           <Image
             alt="Me and the Singapore TigerLaunch delegation visiting a buddhist temple"
             src={'/gallery/temple.jpg'}
@@ -69,8 +75,11 @@ export default function Home() {
             priority
             className="rounded-lg object-cover"
           />
+          <div className="absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-white w-3/4 text-xs">Me and the Singapore TigerLaunch delegation visiting a buddhist temple</span>
+          </div>
         </div>
-        <div className="relative row-span-2">
+        <div className="relative group row-span-2">
           <Image
             alt="Me at IBM's quantum computing lab in New York"
             src={'/gallery/quantumcomputer.jpg'}
@@ -79,8 +88,11 @@ export default function Home() {
             priority
             className="rounded-lg object-cover sm:object-center"
           />
+          <div className="absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-white w-3/4 text-xs">Me at IBM's quantum computing lab in New York</span>
+          </div>
         </div>
-        <div className="relative row-span-2">
+        <div className="relative group row-span-2">
           <Image
             alt="My friends and I finally becoming official Computer Science majors"
             src={'/gallery/majordeclaration.jpg'}
@@ -89,8 +101,11 @@ export default function Home() {
             priority
             className="rounded-lg object-cover"
           />
+          <div className="absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-white w-3/4 text-xs">My friends and I finally becoming official Computer Science majors</span>
+          </div>
         </div>
-        <div className="relative h-40">
+        <div className="relative group h-40">
           <Image
             alt="Me moderating a startup panel at the 2023 TigerLaunch finals"
             src={'/gallery/moderating.jpg'}
@@ -99,6 +114,9 @@ export default function Home() {
             priority
             className="rounded-lg object-cover"
           />
+          <div className="absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-white w-3/4 text-xs">Me moderating a startup panel at the 2023 TigerLaunch finals</span>
+          </div>
         </div>
       </div>
 
