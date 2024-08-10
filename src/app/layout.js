@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import Header from "@/components/Header";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "Athan Zhang",
