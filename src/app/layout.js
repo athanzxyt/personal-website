@@ -2,7 +2,6 @@
 
 import "./globals.css";
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Athan Zhang",
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
       <body className="flex justify-center">
         <div className="w-full max-w-screen-lg space-y-8 p-4">
           <Header />
-          <Navbar />
           {children}
         </div>
       </body>

@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   @apply bg-tertiary;
 }
@@ -20,6 +21,20 @@ body {
 
 .nav-item.active {
   @apply bg-black text-white;
+}
+
+/* Blog Formatting */
+
+.blog-h1 {
+  @apply text-3xl font-serif pb-8;
+}
+
+.blog-h2 {
+  @apply text-xl pb-4;
+}
+
+.blog-text {
+  @apply font-serif pb-4;
 }
 
 /* :root {

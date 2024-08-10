@@ -1,10 +1,8 @@
 ---
 title: Are Stairs More Energy Efficient Than Elevators?
 subtitle: "Comparing Biomechanical Energy and Typical Fuels"
-date: 8/1/2024
+date: July 1st, 2024
 ---
-
-# Are Stairs More Energy Efficient Than Elevators?
 
 When comparing stairs and elevators in terms of energy efficiency, stairs are significantly more energy-efficient. Using stairs requires no electrical energy, relying solely on human physical effort. This not only conserves energy but also provides health benefits such as improved cardiovascular fitness and muscle strength.
 

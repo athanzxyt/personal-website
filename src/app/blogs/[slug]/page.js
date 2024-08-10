@@ -5,8 +5,10 @@ import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
 import React from 'react';
 import getBlogsMetadata from '@/utils/getBlogsMetadata';
+import { timeAgo } from '@/utils/dateDifference';
 
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 
 function getBlogContent(slug) {
   const filePath = `src/content/blogs/${slug}.md`;
@@ -45,6 +47,7 @@ export async function generateMetadata({ params, searchParams }) {
 export default function BlogPage(props) {
   const slug = props.params.slug;
   const post = getBlogContent(slug);
+  const timeAgoString = timeAgo(post.date);
 
   if (!post) {
     notFound()
@@ -53,19 +56,19 @@ export default function BlogPage(props) {
   const formatting = {
     overrides: {
       h1: {
-        component: ({ children, ...props }) => (
-          <h1 className="text-3xl font-bold my-4 font-red-300" {...props}>{children}</h1>
-        ),
+        props: {
+          className: 'blog-h1',
+        },
       },
       h2: {
-        component: ({ children, ...props }) => (
-          <h2 className="text-2xl font-semibold my-3" {...props}>{children}</h2>
-        ),
+        props: {
+          className: 'blog-h2',
+        },
       },
       p: {
-        component: ({ children, ...props }) => (
-          <p className="my-2 text-gray-700" {...props}>{children}</p>
-        ),
+        props: {
+          className: 'blog-text',
+        },
       },
     },
   };
@@ -73,6 +76,9 @@ export default function BlogPage(props) {
   return (
     <main>
       <article>
+        <Link href='/blogs' className='text-zinc-500'>← Back to Blogs</Link>
+        <h1 className='text-3xl font-serif pt-4 pb-1'>{post.title}</h1>
+        <h2 className='text-sm text-zinc-500 italic pb-8'>Published on: {post.date} ({timeAgoString})</h2>
         <Markdown options={formatting}>{post.content}</Markdown>
       </article>
     </main>
