@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,8 +15,12 @@ body {
   @apply px-1 py-0.5 text-sm md:text-base md:px-3 md:py-0.5 rounded-xl border-2;
 }
 
-.nav-item:hover:not(.active) {
+/* .nav-item:hover:not(.active) {
   @apply bg-secondary text-white;
+} */
+
+.nav-item:hover:not(.active) {
+  
 }
 
 .nav-item.active {

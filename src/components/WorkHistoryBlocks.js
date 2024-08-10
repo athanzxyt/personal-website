@@ -2,7 +2,7 @@
 
 const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
   return (
-    <div className='flex justify-between mb-4 h-24'>
+    <div className='flex justify-between mb-2 h-24'>
       <div>
         <div className='flex flex-col-reverse md:flex-row items-start md:items-center'>
           <h2 className='text-base md:text-xl'>{title}</h2>

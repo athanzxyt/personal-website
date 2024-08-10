@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         'sans': ['Archivo', 'sans-serif'],
         'serif': ['Lora', 'serif'],
+        // 'serif': ['Tenor Sans', 'sans-serif'],
       },
       colors: {
         'primary': '#0A0A0A',
