@@ -61,7 +61,14 @@ function Header() {
           </div>            
         </div>
       </header>
-      <section className="w-full border-b-2"/>
+      <div className="flex w-full h-[6px]">
+        <div className="flex-1 bg-green-500"></div>
+        <div className="flex-1 bg-yellow-400"></div>
+        <div className="flex-1 bg-orange-400"></div>
+        <div className="flex-1 bg-red-600"></div>
+        <div className="flex-1 bg-purple-500"></div>
+        <div className="flex-1 bg-blue-500"></div>
+      </div>
     </>
   );
 }

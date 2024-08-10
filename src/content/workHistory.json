@@ -10,7 +10,7 @@
         "company": "Leidos",
         "title": "Data Science Intern",
         "location": "Alexandria, VA",
-        "current": true,
+        "current": false,
         "imgPath": "/leidosLogo.png"
     },
     {

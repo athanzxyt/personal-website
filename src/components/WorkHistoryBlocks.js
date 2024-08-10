@@ -20,7 +20,8 @@ const WorkHistoryBlock = ({ company, title, current, imgPath }) => {
           alt={`${company} Logo`}
           fetchPriority="low"
           decoding="async"
-          className='h-8 mt-6 md:mt-0 md:h-12 filter grayscale contrast-80 hover:filter-none'
+          className='h-8 mt-6 md:mt-0 md:h-12' 
+          // filter grayscale contrast-80 hover:filter-none
         /> 
       </div>
     </div>
