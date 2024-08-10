@@ -1,6 +1,5 @@
 // src/app/page.js
 
-import React from "react";
 import ProjectCards from "@/components/ProjectCards";
 import WorkHistoryBlocks from "@/components/WorkHistoryBlocks";
 import getProjectsMetadata from "@/utils/getProjectsMetadata";
