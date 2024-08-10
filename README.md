@@ -1,8 +1,6 @@
 
 # Athan's Personal Website
 
-https://www.youtube.com/watch?v=QIIc5EYSZpw
-
 ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat)
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 ![Framer Badge](https://img.shields.io/badge/Framer_Motion-05F?logo=framer&logoColor=fff&style=flat)
@@ -22,6 +20,11 @@ To run this project in developer mode run
 ```bash
   npm run dev
 ```
+
+## Future Work
+
+- Blog Counter [Inspiration by Leerob](https://github.com/leerob/leerob.io/blob/main/app/blog/%5Bslug%5D/page.tsx)
+
 ## License
 
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
