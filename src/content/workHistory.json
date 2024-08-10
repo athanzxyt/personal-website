@@ -4,20 +4,20 @@
         "title": "Founding Engineer",
         "location": "Remote",
         "current": true,
-        "imgPath": "/vytalLogo.png"
+        "imgPath": "/logos/vytalLogo.png"
     },
     {
         "company": "Leidos",
         "title": "Data Science Intern",
         "location": "Alexandria, VA",
         "current": false,
-        "imgPath": "/leidosLogo.png"
+        "imgPath": "/logos/leidosLogo.png"
     },
     {
         "company": "George Mason University",
         "title": "Deep Learning Intern",
         "location": "Fairfax, VA",
         "current": false,
-        "imgPath": "/gmuLogo.png"
+        "imgPath": "/logos/gmuLogo.png"
     }
 ]

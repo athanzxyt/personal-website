@@ -1,5 +1,7 @@
 // src/app/page.js
 
+import Image from "next/image";
+
 import ProjectCards from "@/components/ProjectCards";
 import WorkHistoryBlocks from "@/components/WorkHistoryBlocks";
 import getProjectsMetadata from "@/utils/getProjectsMetadata";
@@ -13,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex flex-col gap-y-8">
+      <main className="flex flex-col">
         <div className='text-sm md:text-base text-zinc-500'>
           <p>
             I'm currently an undergraduate at Princeton in an accelerated
@@ -30,6 +32,69 @@ export default function Home() {
             lifting, reading, and following the latest trends in tech.
           </p>
         </div>
+
+        <div className="grid grid-cols-2 grid-rows-4 md:grid-rows-3 md:grid-cols-3 gap-4 my-8">
+        <div className="relative h-40">
+          <Image
+            alt="My team and I at the 2023 Wharton Investment Competition finals, where we won 1st place"
+            src={'/gallery/investmentfinals.jpg'}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative md:row-span-2 row-span-1">
+          <Image
+            alt="Me and a friend at our high school graduation"
+            src={'/gallery/hsgraduation.jpg'}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover object-top sm:object-center"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="Me and the Singapore TigerLaunch delegation visiting a buddhist temple"
+            src={'/gallery/temple.jpg'}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative row-span-2">
+          <Image
+            alt="Me at IBM's quantum computing lab in New York"
+            src={'/gallery/quantumcomputer.jpg'}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover sm:object-center"
+          />
+        </div>
+        <div className="relative row-span-2">
+          <Image
+            alt="My friends and I finally becoming official Computer Science majors"
+            src={'/gallery/majordeclaration.jpg'}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative h-40">
+          <Image
+            alt="Me moderating a startup panel at the 2023 TigerLaunch finals"
+            src={'/gallery/moderating.jpg'}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+      </div>
 
         <div>
           <h1 className="font-serif text-lg md:text-2xl pb-3">Featured Projects</h1>
