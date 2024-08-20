@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
         <div className="w-full max-w-screen-lg space-y-8 p-4">
           <Header />
           {children}
+          <SpeedInsights />
         </div>
       </body>
     </html>
