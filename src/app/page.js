@@ -1,5 +1,7 @@
 // src/app/page.js
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Image from "next/image";
 import Link from "next/link";
 
