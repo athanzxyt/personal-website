@@ -27,15 +27,15 @@ body {
 /* Blog Formatting */
 
 .blog-h1 {
-  @apply text-3xl font-serif pb-8;
+  @apply text-3xl font-serif pt-4 pb-2;
 }
 
 .blog-h2 {
-  @apply text-xl pb-4;
+  @apply font-serif text-xl py-4;
 }
 
 .blog-text {
-  @apply font-serif pb-4;
+  @apply font-thin pb-4;
 }
 
 /* :root {
