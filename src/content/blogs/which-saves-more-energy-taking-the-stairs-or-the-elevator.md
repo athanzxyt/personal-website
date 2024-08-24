@@ -1,10 +1,8 @@
 ---
 title: "Which Saves More Energy: Taking the Stairs or the Elevator?"
 subtitle: "Are you really being more green by climbing those floors"
-date: July 1st, 2024
+date: August 24th, 2024
 ---
-
-# Which Saves More Energy: Taking the Stairs or the Elevator?
 
 One day during the final exams week of my spring semester, freshman year of college, I asked to meet up with my friend, Michel, to study in the vicinity of each other (we didn’t actually share a class, but his presence was motivating). The location I had chosen was the seventh floor of New South, a modern building with large floor-to-ceiling glass windows that allowed for a nice view of the campus, which made studying for three back-to-back finals feel a little less stressful.
 
@@ -22,7 +20,7 @@ However, introductory high school physics often poorly models the world, which i
 
 Interestingly, in a 2012 study on determining the energy burned when climbing stairs [[1]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3520986/), participants were found to burn an average of 8.62 kcal per 15 meters. Now, this study doesn’t relate directly to our scenario (the study included both males and females, had an average body mass lower than Michels, and Michel is generally a pretty fit guy, which would result in lower caloric burn), nonetheless, it was the best I could find from 30min of online scouring. Assuming an average floor height of 3 meters, Michel would’ve burned approximately 12 kcal, equivalent to 3 almonds, half a cup of cherry tomatoes, or ~1% of an Olivia Rodrigo GUTS Crumbl cookie. 
 
-![Equivalent to 700 flights of stairs climbed.png](src/content/blogs/images/2a2e817c-fdcc-42c7-9088-09cac2b6c7cb.png)
+![Equivalent to 700 flights of stairs climbed.png](images/700Gutscookie.png)
 
 Based on empirical evidence on how slowly the New South elevator moves, I will assume that the elevator is a hydraulic type rather than an electric cable type. According to estimates from this article [[2]](https://slate.com/technology/2009/04/when-people-take-the-elevator-does-earth-get-the-shaft.html), a hydraulic elevator in a 3-story office building uses around 3,800 kWh per year, while one in a 10-story office building uses around ~21,000 kWh. Now, New South isn’t a proper office building and definitely faces less foot traffic than other spots on Campus (primarily due to its distance from the campus center). For these reasons, I estimate around a ~8,000 kWh annual usage for the elevators. Assuming around 70 lifts daily during the academic year and around 10 lifts daily during the summer season, that averages around 50 lifts per day. This means that each lift costs on average 0.44 kWh or 377 kcal (that’s almost 2/5th of a GUTS Crumbl cookie now!). While keeping in mind that this estimate depends on a multitude of assumptions, we see that o**nce again, taking the stairs is likely more energy efficient.**
 
