@@ -38,6 +38,10 @@ body {
   @apply font-thin pb-4;
 }
 
+.blog-a {
+  @apply font-bold text-blue-500;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

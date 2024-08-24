@@ -70,6 +70,12 @@ export default function BlogPage(props) {
           className: 'blog-text',
         },
       },
+      a: {
+        component: Link,
+        props: {
+          className: 'blog-a',
+        },
+      },
     },
   };
 
